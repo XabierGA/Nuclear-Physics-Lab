@@ -1,0 +1,224 @@
+\documentclass[a4paper,12pt]{article} 
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} % Permite cambiar la fuente por defecto.
+\usepackage{graphicx}    % Permite implementar imágenes.
+\usepackage{color}       % Permite el uso de colores.
+\usepackage{anysize}     % Permite modificar el tamaño de los márgenes.
+\usepackage{multicol}    % Permite escribir a doble, triple...columna.
+\usepackage{bm}         
+\usepackage{textcomp}    
+\usepackage{eurosym}     
+\usepackage{amsthm} 
+\usepackage{amsmath}     
+\usepackage{amsmath,amsfonts} 
+\usepackage{lineno} 
+\usepackage{float}
+\usepackage{booktabs}     
+\usepackage{fancyhdr}
+\usepackage{longtable}
+\usepackage[makeroom]{cancel}
+\usepackage{listings}
+
+\marginsize{2.5cm}{1.5cm}{1.5cm}{1.5cm} % MÁRGENES: Izq, Der, Sup, Inf.
+\parindent=0mm                        % Sangría por defecto. 
+\parskip=3mm                          % Espacio entre párrafos por defecto.
+\renewcommand{\baselinestretch}{1}    % Interlineado.
+\newcommand{\es}{\hspace{0.15cm}}
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Xabier G. Andrade}
+\rfoot{Nuclear Physics}
+\lfoot{Lab}
+
+
+
+\title{Nuclear Physics Lab}
+\author{Xabier García Andrade}
+\date{10th of October 2018} 
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\newpage
+
+\section{First exercise}
+
+\subsection{1.1}
+
+The signal has this kind of shape because it comes from the photomultiplier and then goes into the oscilloscope and a capacitor produces it. Then the exponential decay is due to the source.
+
+\begin{figure}[H]
+\centering
+\label{fig:without}
+\includegraphics[width=0.8 \textwidth, inner]{withoutamplif.pdf}
+\end{figure}
+
+
+\subsection{1.2}
+
+
+\begin{figure}[H]
+\centering
+\label{fig:with}
+\includegraphics[width=0.8 \textwidth, inner]{amplif.pdf}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\label{fig:withouta}
+\includegraphics[width=0.8 \textwidth, inner]{withoutamplif.pdf}
+\end{figure}
+
+The signal without amplification has an exponential shape, while after the amplification it has a gaussian shape. It is more convenient to have a gaussian shape because it has a more defined peak and the mathematical description is easier.
+
+\subsection{1.3}
+
+\begin{figure}[H]
+\centering
+\label{fig:withouta}
+\includegraphics[width=0.8 \textwidth, inner]{channeldiag.pdf}
+\end{figure}
+
+\subsection{1.4}
+
+The difference lies in the live time. Since the second one was collimated, the beam will be more focused and thus reducing the dead time.
+
+\subsection{1.5}
+
+Real time is the elapsed time (clock time) and live time refers to the time that the detector is available to accept pule.
+
+\newpage
+
+\subsection{1.6}
+First one:
+$$Count = \frac{13950}{59.20} = 235.64 $$	
+
+Relative error: 
+
+$$ \frac{235.64-235.64}{235.64} = 0$$
+
+Second one: 
+$$Count = \frac{129907}{55.54} = 2338.98 $$
+
+Relative error: 
+
+$$ \frac{2338.98-2338.89}{2338.89
+} = 0.00004$$
+
+\section{2 Study of gamma radiation using an HPGe detector}
+
+\subsection{2.1}
+
+The first one at $511.4 keV$ is electron positron annihilation due to beta plus decay and the second one at $1272.9 keV$
+
+\subsection{2.3}
+
+There are two main reasons behind this: 
+
+First it´s because after positron-electron anhilation, one gamma is emitted in the opposite direction and thus it is more unlikely that it will reach the Detector. 
+The second reason is because the efficiency of the detector decreases as the energy increases.
+
+\subsection{2.4}
+
+The Compton edge is at $331.4 kEV$. 
+
+Relative error with the theoretical value: $$ \frac{0.334-0.331}{0.331} = 0.0091 $$
+
+\subsection{2.5}
+
+The first peak at $ 13308 $ refers to a beta decay to nickel 60. Then the second peak at $1130.6 keV $ to go back to the ground state.
+
+\subsection{2.6}
+
+The Compton Edge is at $ 976.5 keV$. 
+
+Relative error with the theoretical value: $$ \frac{976.5-960.0}{960.0} = 0.017 $$
+
+\subsection{2.7}
+
+Because the other ones are not as probable.
+
+\subsection{2.8}
+
+Potassium-40 at $1.459 MeV$.
+
+\subsection{2.9}
+
+We could use a sample that would give us more peaks for the calibration.
+
+\section{3 Radioactive Isotope Identification}
+
+\subsection{Peaks}
+
+$$608.9 \hspace{0.2cm} keV $$ Pb 214 gamma decay.
+$$1119.0 \hspace{0.2cm} keV $$ Bi - 214 gamma decay.
+$$1235.63 \hspace{0.2cm} keV $$ 
+$$1458.3 \hspace{0.2cm}  keV$$ K -40 gamma decay.
+
+
+
+
+\section{4 Study of alpha radiation using a surface barrier detector}
+
+\subsection{4.1}
+
+After looking into the table of isotopes, the values are in the order of magnitude of MeV. The best resolution would be MeV. Values for alphas: 
+
+$$E_1 = 5.846 \hspace{0.2cm} MeV \hspace{3cm} E_2 = 5.443 \hspace{0.2cm} MeV$$
+
+\subsection{4.2}
+
+The maximun energy is $5.846 \hspace{0.2cm} MeV$. Our calculated value is $5.63 \hspace{0.2cm} MeV$. The difference between our values is: 
+
+$$\frac{5.645-5.486}{5.486} = 0.02$$
+
+\subsection{4.4}
+
+As we pull out the sample, the energy decreases and the live time necessary increases. We get less counts per second.
+
+\subsection{4.5}
+
+\begin{figure}[H]
+\centering
+\label{fig:withouta}
+\includegraphics[width=0.8 \textwidth, inner]{countdis.pdf}
+\end{figure}
+
+This decreasing exponential behaviour was expected because it follows this rule: 
+
+$$N = N_0 e^{- \sigma x}$$
+
+\subsection{4.6}
+
+\begin{figure}[H]
+\centering
+\label{fig:withouta}
+\includegraphics[width=0.8 \textwidth, inner]{enerdis.pdf}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\label{fig:withouta}
+\includegraphics[width=0.8 \textwidth, inner]{enerdisfit.pdf}
+\end{figure}
+
+$$y = a \cdot x + b $$
+
+$$a = (-4.09 \pm 0.20) \hspace{0.2cm} keV/mm \hspace{1cm} b = (176.0 \pm 5.4) \hspace{0.2cm} keV$$
+
+\subsection{4.2.1}
+
+Result: $$E = 46.98 keV$$
+
+Thickness = $7.0 \mu m$
+
+\section{5}
+
+\subsection{•}
+
+
+\end{document}
